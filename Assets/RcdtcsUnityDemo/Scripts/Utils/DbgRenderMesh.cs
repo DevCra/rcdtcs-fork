@@ -270,7 +270,7 @@ public class DbgRenderMesh{
 		}else{
 			m_GameObject.name = name;
 		}
-		m_GameObject.renderer.material = material;
+		m_GameObject.GetComponent<Renderer>().material = material;
 		return m_GameObject;
 	}
 	

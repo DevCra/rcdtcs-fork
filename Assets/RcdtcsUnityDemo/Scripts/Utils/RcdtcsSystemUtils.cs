@@ -218,8 +218,8 @@ public static partial class RcdtcsUnityUtils{
         public void AddTerrain(Terrain terrain)
         {
             //Terrain Data
-            int terrainWidth = terrain.terrainData.heightmapWidth;
-            int terrainHeight = terrain.terrainData.heightmapHeight;
+            int terrainWidth = terrain.terrainData.heightmapResolution;
+            int terrainHeight = terrain.terrainData.heightmapResolution;
             float[,] terrainData = terrain.terrainData.GetHeights(0, 0, terrainWidth, terrainHeight);
 
             Vector3 meshScale = new Vector3(terrain.terrainData.size.x / (terrainWidth - 1), terrain.terrainData.size.y, terrain.terrainData.size.z / (terrainHeight - 1));
